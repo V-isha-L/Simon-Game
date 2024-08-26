@@ -1,1 +1,1 @@
-# Simon-Game that i have created fro practice
+# Simon-Game that i have created for practice

@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(183, 148, 102);
+}
+
+body {
+    background-color: rgba(42, 38, 38, 0.886);
+}
+
+.nav {
+    height: 5rem;
+    background-color: rgb(33, 31, 31);
+    position: sticky;
+    top: 0;
+    border: 2px solid whitesmoke;
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

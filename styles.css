@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     color: rgb(183, 148, 102);
 }
 
 body {
     background-color: rgba(42, 38, 38, 0.886);
+    font-family: Arial, sans-serif;
 }
 
 .nav {
@@ -14,8 +16,108 @@ body {
     position: sticky;
     top: 0;
     border: 2px solid whitesmoke;
-    border-radius: 10%;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
+}
+
+.nav a {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav p {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    padding: 5rem;
+}
+
+.options {
+    display: flex;
+    gap: 2rem;
+}
+
+.options button {
+    height: 3rem;
+    font-size: 1.3rem;
+    width: 6rem;
+    border: 5px solid rgb(33, 31, 31);
+    border-radius: 30%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: rgb(183, 148, 102);
+    color: rgb(33, 31, 31);
+}
+
+.options button:hover {
+    filter: invert();
+    transform: scale(1.1);
+}
+
+.options button:active {
+    transform: scale(0.95);
+    background-color: #1d6d9f;
+}
+
+.game-container {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.quad {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.quad1 {
+    background-color: red;
+    clip-path: polygon(0 80%,100% 90%,75% 0,0 0);
+}
+
+.quad2 {
+    background-color: green;
+    clip-path: polygon(0 80%,100% 90%,75% 0,0 0);
+    transform: rotateY(180deg);
+}
+
+.quad3 {
+    background-color: blue;
+    clip-path: polygon(0 80%,100% 90%,75% 0,0 0);
+    transform: rotateZ(275deg);
+}
+
+.quad4 {
+    background-color: yellow;
+    clip-path: polygon(0 80%,100% 90%,75% 0,0 0);
+    transform: rotateZ(180deg);
 }

@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    font-family: fantasy;
 }
 
 .nav a {
@@ -95,8 +96,10 @@ body {
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
+    border: 2px solid whitesmoke;
     color: #fff;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .quad1 {
@@ -120,4 +123,9 @@ body {
     background-color: yellow;
     clip-path: polygon(0 80%,100% 90%,75% 0,0 0);
     transform: rotateZ(180deg);
+}
+
+.pressed {
+    transform: scale(0.98);
+    background-color: rgba(111, 89, 89, 0.886);
 }

@@ -126,6 +126,6 @@ body {
 }
 
 .pressed {
-    transform: scale(0.98);
+    /* transform: scale(0.98); */
     background-color: rgba(111, 89, 89, 0.886);
 }
